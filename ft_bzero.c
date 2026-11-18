@@ -6,16 +6,19 @@
 /*   By: joseribe <joseribe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 09:43:17 by joseribe          #+#    #+#             */
-/*   Updated: 2026/11/04 10:27:44 by joseribe         ###   ########.fr       */
+/*   Updated: 2026/11/18 16:50:33 by joseribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_bzero(void *s, size_t n)
 {
+	char	*p;
+
+	p = s;
 	while (n > 0)
 	{
-		*s = '\0';
-		s++;
+		*p = '\0';
+		p++;
 		n--;
 	}
 }

@@ -6,17 +6,20 @@
 /*   By: joseribe <joseribe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 09:43:17 by joseribe          #+#    #+#             */
-/*   Updated: 2026/11/04 10:36:14 by joseribe         ###   ########.fr       */
+/*   Updated: 2026/11/18 17:41:39 by joseribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	*ft_memset(void *s, int c, size_t n)
 {
+	char	*p;
+
+	p = s;
 	while (n > 0)
 	{
-		*s = c;
-		s++;
+		*p = c;
+		p++;
 		n--;
 	}
-	return (s);
+	return (p);
 }

@@ -6,13 +6,13 @@
 /*   By: joseribe <joseribe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 09:43:17 by joseribe          #+#    #+#             */
-/*   Updated: 2026/11/04 09:55:24 by joseribe         ###   ########.fr       */
+/*   Updated: 2026/11/18 16:55:47 by joseribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	if (c >= '\032' && c <= '\126')
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }
